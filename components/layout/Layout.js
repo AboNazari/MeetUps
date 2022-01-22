@@ -1,6 +1,5 @@
 import MainNavigation from "./MainNavigation";
 import classes from "./Layout.module.css";
-import Link from "next/router";
 
 function Layout(props) {
   return (
