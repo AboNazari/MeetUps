@@ -1,5 +1,4 @@
 import MeetupList from "../components/meetups/MeetupList";
-
 const Dummy_Meetups = [
   {
     id: "1",
@@ -27,8 +26,29 @@ const Dummy_Meetups = [
   },
 ];
 
-const HomePage = () => {
-  return <MeetupList meetups={Dummy_Meetups} />;
+const HomePage = (props) => {
+  return <MeetupList meetups={props.meetups} />;
 };
+
+// export async function getServerSideProps(context) {
+//   const req = context.req;
+//   const res = context.res;
+//   // fetch some data from an API
+//   return {
+//     props: {
+//       meetups: Dummy_Meetups,
+//     },
+//   };
+// }
+
+export async function getStaticProps() {
+  //fetch some data from an API
+  return {
+    props: {
+      meetups: Dummy_Meetups,
+    },
+    revalidate: 10,
+  };
+}
 
 export default HomePage;
