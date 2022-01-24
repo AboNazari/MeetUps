@@ -1,7 +1,7 @@
 import MeetupList from "../components/meetups/MeetupList";
 const Dummy_Meetups = [
   {
-    id: "1",
+    id: "m1",
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.lrEfWvPVD4P8zrVwIr6xSQHaEo%26pid%3DApi&f=1",
     title: "First Meetup",
@@ -9,7 +9,7 @@ const Dummy_Meetups = [
     description: "This is first meetup",
   },
   {
-    id: "2",
+    id: "m2",
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uSaEGYBQHosLJYLK1CPWrQHaE8%26pid%3DApi&f=1",
     title: "Second Meetup",
@@ -17,7 +17,7 @@ const Dummy_Meetups = [
     description: "This is Second meetup",
   },
   {
-    id: "3",
+    id: "m3",
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BvFhZTRcaAyMIIZKiMqZwgHaEo%26pid%3DApi&f=1",
     title: "Third Meetup",
