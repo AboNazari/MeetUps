@@ -33,7 +33,7 @@ const HomePage = (props) => {
 // export async function getServerSideProps(context) {
 //   const req = context.req;
 //   const res = context.res;
-//   // fetch some data from an API
+// fetch some data from an API
 //   return {
 //     props: {
 //       meetups: Dummy_Meetups,

@@ -9,10 +9,10 @@ webpackHotUpdate_N_E("pages/new-meetup",{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _components_meetups_NewMeetupForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/meetups/NewMeetupForm */ "./components/meetups/NewMeetupForm.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
@@ -33,15 +33,18 @@ var NewMeetups = function NewMeetups() {
 
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
 
-  var meetupsFormHandler = /*#__PURE__*/function () {
-    var _ref = Object(C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee(meetupsEntry) {
+  function meetupsFormHandler(_x) {
+    return _meetupsFormHandler.apply(this, arguments);
+  }
+
+  function _meetupsFormHandler() {
+    _meetupsFormHandler = Object(C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(meetupsEntry) {
       var response, data;
-      return C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+      return C_Users_abdullah_nazari_Desktop_Programing_React_Course_NextJS_Meetups_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              console.log(meetupsEntry);
-              _context.next = 3;
+              _context.next = 2;
               return fetch("/api/new-meetup", {
                 method: "POST",
                 body: JSON.stringify(meetupsEntry),
@@ -50,34 +53,31 @@ var NewMeetups = function NewMeetups() {
                 }
               });
 
-            case 3:
+            case 2:
               response = _context.sent;
-              _context.next = 6;
+              _context.next = 5;
               return response.json();
 
-            case 6:
+            case 5:
               data = _context.sent;
-              console.log(data.message);
+              console.log(data);
               router.push("/");
 
-            case 9:
+            case 8:
             case "end":
               return _context.stop();
           }
         }
       }, _callee);
     }));
+    return _meetupsFormHandler.apply(this, arguments);
+  }
 
-    return function meetupsFormHandler(_x) {
-      return _ref.apply(this, arguments);
-    };
-  }();
-
-  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_meetups_NewMeetupForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(_components_meetups_NewMeetupForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onAddMeetup: meetupsFormHandler
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 21,
+    lineNumber: 20,
     columnNumber: 10
   }, _this);
 };
@@ -153,4 +153,4 @@ $RefreshReg$(_c, "NewMeetups");
 /***/ })
 
 })
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vcGFnZXMvbmV3LW1lZXR1cC9pbmRleC5qcyJdLCJuYW1lcyI6WyJOZXdNZWV0dXBzIiwicm91dGVyIiwidXNlUm91dGVyIiwibWVldHVwc0Zvcm1IYW5kbGVyIiwibWVldHVwc0VudHJ5IiwiY29uc29sZSIsImxvZyIsImZldGNoIiwibWV0aG9kIiwiYm9keSIsIkpTT04iLCJzdHJpbmdpZnkiLCJoZWFkZXJzIiwicmVzcG9uc2UiLCJqc29uIiwiZGF0YSIsIm1lc3NhZ2UiLCJwdXNoIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBOztBQUVBLElBQU1BLFVBQVUsR0FBRyxTQUFiQSxVQUFhLEdBQU07QUFBQTs7QUFDdkIsTUFBTUMsTUFBTSxHQUFHQyw2REFBUyxFQUF4Qjs7QUFDQSxNQUFNQyxrQkFBa0I7QUFBQSxzV0FBRyxpQkFBT0MsWUFBUDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDekJDLHFCQUFPLENBQUNDLEdBQVIsQ0FBWUYsWUFBWjtBQUR5QjtBQUFBLHFCQUVGRyxLQUFLLENBQUMsaUJBQUQsRUFBb0I7QUFDOUNDLHNCQUFNLEVBQUUsTUFEc0M7QUFFOUNDLG9CQUFJLEVBQUVDLElBQUksQ0FBQ0MsU0FBTCxDQUFlUCxZQUFmLENBRndDO0FBRzlDUSx1QkFBTyxFQUFFO0FBQ1Asa0NBQWdCO0FBRFQ7QUFIcUMsZUFBcEIsQ0FGSDs7QUFBQTtBQUVuQkMsc0JBRm1CO0FBQUE7QUFBQSxxQkFTTkEsUUFBUSxDQUFDQyxJQUFULEVBVE07O0FBQUE7QUFTbkJDLGtCQVRtQjtBQVV6QlYscUJBQU8sQ0FBQ0MsR0FBUixDQUFZUyxJQUFJLENBQUNDLE9BQWpCO0FBRUFmLG9CQUFNLENBQUNnQixJQUFQLENBQVksR0FBWjs7QUFaeUI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FBSDs7QUFBQSxvQkFBbEJkLGtCQUFrQjtBQUFBO0FBQUE7QUFBQSxLQUF4Qjs7QUFlQSxzQkFBTyxxRUFBQyx5RUFBRDtBQUFZLGVBQVcsRUFBRUE7QUFBekI7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFQO0FBQ0QsQ0FsQkQ7O0dBQU1ILFU7VUFDV0UscUQ7OztLQURYRixVO0FBbUJTQSx5RUFBZiIsImZpbGUiOiJzdGF0aWMvd2VicGFjay9wYWdlcy9uZXctbWVldHVwLmIzNWY2NjQ3ZTQ2YTdiYzAwOGE1LmhvdC11cGRhdGUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTWVldHVwRm9ybSBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9tZWV0dXBzL05ld01lZXR1cEZvcm1cIjtcclxuaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSBcIm5leHQvcm91dGVyXCI7XHJcblxyXG5jb25zdCBOZXdNZWV0dXBzID0gKCkgPT4ge1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG4gIGNvbnN0IG1lZXR1cHNGb3JtSGFuZGxlciA9IGFzeW5jIChtZWV0dXBzRW50cnkpID0+IHtcclxuICAgIGNvbnNvbGUubG9nKG1lZXR1cHNFbnRyeSk7XHJcbiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiL2FwaS9uZXctbWVldHVwXCIsIHtcclxuICAgICAgbWV0aG9kOiBcIlBPU1RcIixcclxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkobWVldHVwc0VudHJ5KSxcclxuICAgICAgaGVhZGVyczoge1xyXG4gICAgICAgIFwiQ29udGVudC1UeXBlXCI6IFwiYXBwbGljYXRpb24vanNvblwiLFxyXG4gICAgICB9LFxyXG4gICAgfSk7XHJcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpO1xyXG4gICAgY29uc29sZS5sb2coZGF0YS5tZXNzYWdlKTtcclxuXHJcbiAgICByb3V0ZXIucHVzaChcIi9cIik7XHJcbiAgfTtcclxuXHJcbiAgcmV0dXJuIDxNZWV0dXBGb3JtIG9uQWRkTWVldHVwPXttZWV0dXBzRm9ybUhhbmRsZXJ9IC8+O1xyXG59O1xyXG5leHBvcnQgZGVmYXVsdCBOZXdNZWV0dXBzO1xyXG4iXSwic291cmNlUm9vdCI6IiJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vcGFnZXMvbmV3LW1lZXR1cC9pbmRleC5qcyJdLCJuYW1lcyI6WyJOZXdNZWV0dXBzIiwicm91dGVyIiwidXNlUm91dGVyIiwibWVldHVwc0Zvcm1IYW5kbGVyIiwibWVldHVwc0VudHJ5IiwiZmV0Y2giLCJtZXRob2QiLCJib2R5IiwiSlNPTiIsInN0cmluZ2lmeSIsImhlYWRlcnMiLCJyZXNwb25zZSIsImpzb24iLCJkYXRhIiwiY29uc29sZSIsImxvZyIsInB1c2giXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7O0FBRUEsSUFBTUEsVUFBVSxHQUFHLFNBQWJBLFVBQWEsR0FBTTtBQUFBOztBQUN2QixNQUFNQyxNQUFNLEdBQUdDLDZEQUFTLEVBQXhCOztBQUR1QixXQUVSQyxrQkFGUTtBQUFBO0FBQUE7O0FBQUE7QUFBQSxpWEFFdkIsaUJBQWtDQyxZQUFsQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQUN5QkMsS0FBSyxDQUFDLGlCQUFELEVBQW9CO0FBQzlDQyxzQkFBTSxFQUFFLE1BRHNDO0FBRTlDQyxvQkFBSSxFQUFFQyxJQUFJLENBQUNDLFNBQUwsQ0FBZUwsWUFBZixDQUZ3QztBQUc5Q00sdUJBQU8sRUFBRTtBQUNQLGtDQUFnQjtBQURUO0FBSHFDLGVBQXBCLENBRDlCOztBQUFBO0FBQ1FDLHNCQURSO0FBQUE7QUFBQSxxQkFRcUJBLFFBQVEsQ0FBQ0MsSUFBVCxFQVJyQjs7QUFBQTtBQVFRQyxrQkFSUjtBQVNFQyxxQkFBTyxDQUFDQyxHQUFSLENBQVlGLElBQVo7QUFFQVosb0JBQU0sQ0FBQ2UsSUFBUCxDQUFZLEdBQVo7O0FBWEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FGdUI7QUFBQTtBQUFBOztBQWdCdkIsc0JBQU8scUVBQUMseUVBQUQ7QUFBWSxlQUFXLEVBQUViO0FBQXpCO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FBUDtBQUNELENBakJEOztHQUFNSCxVO1VBQ1dFLHFEOzs7S0FEWEYsVTtBQWtCU0EseUVBQWYiLCJmaWxlIjoic3RhdGljL3dlYnBhY2svcGFnZXMvbmV3LW1lZXR1cC4yZTM3OWY5YjdkMDMxOTA5MzRhNC5ob3QtdXBkYXRlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE1lZXR1cEZvcm0gZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvbWVldHVwcy9OZXdNZWV0dXBGb3JtXCI7XHJcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L3JvdXRlclwiO1xyXG5cclxuY29uc3QgTmV3TWVldHVwcyA9ICgpID0+IHtcclxuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcclxuICBhc3luYyBmdW5jdGlvbiBtZWV0dXBzRm9ybUhhbmRsZXIobWVldHVwc0VudHJ5KSB7XHJcbiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiL2FwaS9uZXctbWVldHVwXCIsIHtcclxuICAgICAgbWV0aG9kOiBcIlBPU1RcIixcclxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkobWVldHVwc0VudHJ5KSxcclxuICAgICAgaGVhZGVyczoge1xyXG4gICAgICAgIFwiQ29udGVudC1UeXBlXCI6IFwiYXBwbGljYXRpb24vanNvblwiLFxyXG4gICAgICB9LFxyXG4gICAgfSk7XHJcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpO1xyXG4gICAgY29uc29sZS5sb2coZGF0YSk7XHJcblxyXG4gICAgcm91dGVyLnB1c2goXCIvXCIpO1xyXG4gIH1cclxuXHJcbiAgcmV0dXJuIDxNZWV0dXBGb3JtIG9uQWRkTWVldHVwPXttZWV0dXBzRm9ybUhhbmRsZXJ9IC8+O1xyXG59O1xyXG5leHBvcnQgZGVmYXVsdCBOZXdNZWV0dXBzO1xyXG4iXSwic291cmNlUm9vdCI6IiJ9
