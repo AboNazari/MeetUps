@@ -1,26 +1,27 @@
-//POST /api/new-meetup
 import { MongoClient } from "mongodb";
 import { secret } from "../../secret";
+// /api/new-meetup
+// POST /api/new-meetup
 
-export default async function handler(req, res) {
+async function handler(req, res) {
   if (req.method === "POST") {
     const data = req.body;
-    try {
-      const client = await MongoClient.connect(
-        `mongodb+srv://Abdullah:${secret.mongoPass}@clusterabo.c9i6p.mongodb.net/meetups?retryWrites=true&w=majority`
-      );
-      const db = client.db();
 
-      const meetupsCollection = db.collection("meetups");
+    const client = await MongoClient.connect(
+      `mongodb+srv://Abdullah:${secret.mongoPass}@cluster0.ntrwp.mongodb.net/meetups?retryWrites=true&w=majority`
+    );
+    const db = client.db();
 
-      const result = await meetupsCollection.insertOne(data);
+    const meetupsCollection = db.collection("meetups");
 
-      console.log(result);
+    const result = await meetupsCollection.insertOne(data);
 
-      client.close();
-      res.status(200).json({ message: "Meetup Inserted!" });
-    } catch (err) {
-      res.status(500).json({ message: "failed to load data!" });
-    }
+    console.log(result);
+
+    client.close();
+
+    res.status(201).json({ message: "Meetup inserted!" });
   }
 }
+
+export default handler;
